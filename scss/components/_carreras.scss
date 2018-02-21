@@ -1,0 +1,42 @@
+//conternet para cada .carreras
+.carreras{
+    @include desde($small){
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.carrera {
+    background: blue;
+    height: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrera-title {
+    text-align: center;
+    width: 100%;
+}
+
+.carrera-content {
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba($black, .07);
+    margin-bottom: 1.5em;
+    text-align: center;
+    padding: 1em;
+    border-radius: 10px;
+    @include desde($small){
+        width: calc(50% - 1em); 
+        margin: 0 .5em 1em;
+    }
+    @include desde($large){
+        width: calc(33% - 1em);
+    }
+    &__img {
+        width: 50%;
+        border: 3px solid $color1;
+        border-radius: 10px;
+    }
+}

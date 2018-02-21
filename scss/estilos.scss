@@ -1,0 +1,50 @@
+// Paleta de color
+$color1: #FFAD01;
+$color2: gray;
+$black: #111;
+$white: #fff;
+
+
+// Fuentes
+    //Oswald paraos titulos
+    @import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
+    $font-title:'Oswald', sans-serif;
+    //Lato para los textos
+    @import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
+    $font-text:'Oswald', sans-serif;
+
+// Anchos de las fuentes
+$light:300;
+$normal:400;
+
+// Layout
+    $max-width:1200px;
+
+// off canvas
+    $offcanvas-width: 12em;
+
+// Mixin para media query
+
+@mixin desde($size){
+    @media screen and (min-width: $size){
+        @content;
+    }
+}
+
+// BreakPoints
+$small: 480px;
+$medium: 768px;
+$large: 1025px;
+$x-large: 1400px;
+
+//Imports
+@import "components/base";
+@import "components/header";
+@import "components/menu";
+@import "components/banner";
+@import "components/buttons";
+@import "components/carreras";
+@import "components/modules";
+@import "components/contact";
+@import "components/footer";
+
